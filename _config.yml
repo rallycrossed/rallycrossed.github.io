@@ -12,6 +12,24 @@ github_username:  rallycrossed
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll_picture_tag
+
+picture:
+  source: "assets/images"
+  output: "assets/images_out"
+  suppress_warnings: true
+  ignore_missing_images: false
+  presets:
+    default:
+      ppi: [1, 1.5]
+      source_medium:
+        media: "(min-width: 40em)"
+        width: "600"
+        height: "300"
+      source_default:
+        width: "300"
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

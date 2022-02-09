@@ -9,3 +9,4 @@ This domain name can be yours! Rallycrossed.com and Rallycross.us are available 
 
 The perfect website for a fan or community based website, or maybe even your next racing team.
 
+{% picture rallycrossed.jpg %}
