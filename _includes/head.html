@@ -1,5 +1,4 @@
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -54,9 +53,6 @@
 
     {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url={{ site.baseurl }}/blog" />{% endif %}
-    {% if page.url == "/portfolio/" %}
-    <link rel="stylesheet" href="{{ '/css/selena.css' | prepend: site.baseurl }}">
-    {% endif %}
 
     <script>
         (function (i, s, o, g, r, a, m) {

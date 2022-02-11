@@ -1,8 +1,8 @@
 # Site settings
 title: Rallycrossed.com
 email: "Rallycrossed@christoc.com"
-description: "Rallycrossed.com, Wildwood, Missouri"
-url: https://Rallycrossed.com
+description: "Rallycrossed.com Domain For Sale"
+url: https://rallycrossed.com
 baseurl: 
 facebook_username: ""
 twitter_username: "Rallycrossed"
@@ -12,7 +12,7 @@ deviantart_username:
 flickr_username: ""
 discus_shortname: ""
 share: false
-google_analytics: G-QN6SVGPXYV
+google_analytics: "G-QN6SVGPXYV"
 
 
 data_dir: _data
@@ -92,3 +92,4 @@ defaults:
       type: galleryimage  # select all galleryimage pages
     values:
       layout: picture
+  
