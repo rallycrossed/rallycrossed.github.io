@@ -1,52 +1,94 @@
-title: Rallycrossed.com - Domain Name For Sale
-email: rallycrossed@christoc.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Do you have a use for Rallycrossed.com? Make an offer on this domain name, and see if we accept!
+# Site settings
+title: Rallycrossed.com
+email: "Rallycrossed@christoc.com"
+description: "Rallycrossed.com, Wildwood, Missouri"
+url: https://Rallycrossed.com
+baseurl: 
+facebook_username: ""
+twitter_username: "Rallycrossed"
+instagram_username: ""
+github_username:
+deviantart_username: 
+flickr_username: ""
+discus_shortname: ""
+share: false
+google_analytics: G-QN6SVGPXYV
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rallycrossed
-github_username:  rallycrossed
+
+data_dir: _data
+
+# Owner/author information
+owner:
+  name:   ChrisHammond
+  avatar: ChrisHammond_sq_200.jpg
+  favicon: favicon.ico
+  info: Rallycrossed.com 
+
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
+# Set 'provider' to false to turn commenting off globally.
+#Set 'provider: false' to disable comments globally.
+# Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
+#
+comments:
+  provider: false # disqus
+  disqus:
+    short_name: # "Rallycrossed"
+
+# Internal nav
+nav:
+  - BLOG: "/blog/"
+  - ABOUT: "/about/"
+  
+
+# All translation keys
+translations:
+ # 404.html
+  permalink: "/404.html"
+
+# Server
+destination:      	 ./_site
+port:             	 4000
+
 
 # Build settings
-theme: minima
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 10
+paginate_path: "/blog/page:num/"
+permalink: "/blog/:title/"
+categories_path: "/blog/category/"
+tags_path: "/blog/tag/"
+# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll_picture_tag
+ - jekyll-paginate
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md",vendor]
+
+
+# SiteMap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/blog/"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+
+
+
+#jekyll_picture_tag
 
 picture:
-  source: "assets/images"
-  output: "assets/images_out"
   suppress_warnings: true
-  ignore_missing_images: false
-  presets:
-    default:
-      ppi: [1, 1.5]
-      source_medium:
-        media: "(min-width: 40em)"
-        width: "600"
-        height: "300"
-      source_default:
-        width: "300"
+  fast_build: true
 
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# gallery page generation
+defaults:
+  - scope:
+      type: galleryimage  # select all galleryimage pages
+    values:
+      layout: picture
