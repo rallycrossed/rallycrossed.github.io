@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/2022/02/09/Rallycrossed-domain-name-for-sale.html</loc>
+<loc>https://rallycrossed.com/blog/Rallycrossed-domain-name-for-sale/</loc>
 <lastmod>2022-02-09T18:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/about/</loc>
+<loc>https://rallycrossed.com/blog/</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>https://rallycrossed.com/</loc>
+</url>
+<url>
+<loc>https://rallycrossed.com/about/</loc>
+</url>
+<url>
+<loc>https://rallycrossed.com/terms/</loc>
+</url>
+<url>
+<loc>https://rallycrossed.com/search/</loc>
 </url>
 </urlset>

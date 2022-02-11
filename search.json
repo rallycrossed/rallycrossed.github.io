@@ -1,0 +1,94 @@
+[
+  
+    {
+      "title"    : "Rallycrossed.com Domain Name For Sale!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/blog/Rallycrossed-domain-name-for-sale/",
+      "date"     : "2022-02-09 18:00:00 +0000",
+      "content"   : "[\n  {% for post in site.posts %}\n    {\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date }}\",\n      \"content\"   : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ page.date }}\",\n        \"content\"   : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
+    } 
+  
+  ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "Latest Posts and Events",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/",
+        "date"     : "",
+        "content"   : "<section class=\"section--postsWrapper\">\n  <div class=\"container\">\n    <div class=\"blockGroup\">\n      <ul class=\"blockGroup-list\">\n\n        {% for post in paginator.posts %}\n\n        {% assign post = site.posts.first %}\n        {% assign content = post.content %}\n\n        <li class=\"block\">\n          <div class=\"postArticle-wrapper\">\n\n            <div class=\"post-preview\"\n              style=\"border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #530720;\">\n\n              <a href=\"{{ post.url | prepend: site.baseurl }}\">\n                {% if post.image.feature %}\n                {% picture blogcrop {{ post.image.feature }} --alt {{ post.title }} %}\n                {% endif %}\n                <p class=\"post-title\"\n                  style=\"font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; \">\n                  {{ post.title }}\n                </p>\n              </a>\n              {% if post.subtitle %}\n              <p class=\"post-subtitle\"\n                style=\"font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; \">\n                {{ post.subtitle }}</p>\n              {% endif %}\n\n              <p class=\"post-meta\"\n                style=\"font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; \">\n                Posted on {{ post.date | date: \"%B %-d, %Y\" }}</p>\n            </div>\n\n          </div>\n        </li>\n        {% endfor %}\n        <p>&nbsp;</p>\n      </ul>\n    </div>\n  </div>\n</section>\n\n\n<!-- Pager -->\n{% if paginator.total_pages > 1 %}\n<ul class=\"pager\" style=\"font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;\">\n  {% if paginator.previous_page %}\n  <li class=\"previous\">\n    <a href=\"{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}\">&larr; Newer Posts</a>\n  </li>\n  {% endif %}\n\n  <span class=\"button-height\"> Page {{paginator.page}} of {{paginator.total_pages}}</span>\n\n  {% if paginator.next_page %}\n  <li class=\"next\">\n    <a href=\"{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}\">Older Posts &rarr;</a>\n  </li>\n  {% endif %}\n</ul>\n{% endif %}\n\n<br>"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "About",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/about/",
+        "date"     : "",
+        "content"   : "Interested in Rallycrossed.com?\n\nThis domain name is available for sale or lease. 5 Year Minimum for a lease, reach out to me via twitter or email (links below) to start a conversation.\n\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Terms",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/terms/",
+        "date"     : "",
+        "content"   : "Terms of Service and Privacy Policy coming soon."
+     
+   } ,
+  
+   {
+     
+        "title"    : "Search",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/search/",
+        "date"     : "",
+        "content"   : "<style type=\"text/css\">\n            \n      #search-input {\n        display: inline-block;\n        color: #008989;\n        background-color: #12161d;\n        border-color: #223333;\n        padding: .5em;\n        width: 100%;\n        font-size: 0.8em;\n      }\n        \n         #search-input:focus {\n        display: inline-block;\n        color: #ddd;\n        background-color: #12161d;\n        border-color: #223333;\n        border-width: thick;\n        border-style: outset;\n        box-shadow: -1px 1px 5px 5px #008989;\n        outline: 0;\n        width: 100%;\n        font-size: 0.8em;\n              }\n\n    </style>\n\n<!-- Html Elements for Search -->\n<input type=\"text\" id=\"search-input\" placeholder=\"Enter keywords...\">\n<ul id=\"results-container\" style=\"list-style-type: none;\"></ul>    \n\n<!-- Script pointing to super-search.js -->\n<script src=\"{{ site.baseurl }}/js/super-search.js\" type=\"text/javascript\"></script>\n\n\n    <script type=\"text/javascript\">\n      SimpleJekyllSearch({\n        searchInput: document.getElementById('search-input'),\n        resultsContainer: document.getElementById('results-container'),\n        json: '{{ site.baseurl }}/search.json',\n        searchResultTemplate: '<li><a href=\"{url}\" title=\"{desc}\">{title}</a></li>',\n        noResultsText: 'No results found',\n        limit: 10,\n        fuzzy: true,\n        exclude: ['Welcome']\n      })\n    </script>\n\n\n<style>\n.site-tag a {\n    display: inline-block;\n    margin-right: 12px;\n}\n</style>\n\n\n<br>\n\n\n<style>\n.site-category a {\n    display: inline-block;\n    margin-right: 12px;\n}\n</style>\n\n\n\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } 
+  
+]
