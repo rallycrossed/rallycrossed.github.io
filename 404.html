@@ -59,7 +59,7 @@
 		<link rel="stylesheet" href="/css/WYSIWYG.css" media="screen" />
 		<link rel="stylesheet" href="/css/main.css" />
 		<link rel="stylesheet" href="/css/galleries.css" />
-		<link rel="stylesheet" href="/css/magnificpopup.css?v=1644607618" />
+		<link rel="stylesheet" href="/css/magnificpopup.css?v=1644940574" />
 		<link href="/css/tags-wrap.css" rel="stylesheet" />
 		<link rel="stylesheet" href="/css/journal.css" media="screen" />
 
@@ -92,31 +92,19 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<meta http-equiv="refresh" content="5; url=/blog" />
-
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-RXLH8ZKPEM"
+		></script>
 		<script>
-			(function (i, s, o, g, r, a, m) {
-				i["GoogleAnalyticsObject"] = r;
-				(i[r] =
-					i[r] ||
-					function () {
-						(i[r].q = i[r].q || []).push(arguments);
-					}),
-					(i[r].l = 1 * new Date());
-				(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-				a.async = 1;
-				a.src = g;
-				m.parentNode.insertBefore(a, m);
-			})(
-				window,
-				document,
-				"script",
-				"https://www.google-analytics.com/analytics.js",
-				"ga"
-			);
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-			ga("create", "G-QN6SVGPXYV", "auto");
-			ga("send", "pageview");
+			gtag("config", "G-RXLH8ZKPEM");
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
